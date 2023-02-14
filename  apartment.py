@@ -8,16 +8,11 @@ win.title('Квартиры')
 win.config(padx=5, pady=5)
 win.config(bg='#AFB3B6')
 
-lab_title = tk.Label(win, text='За текущий месяц - Февраль',
-                     font=('Arial', 20),
-                     relief=tk.RAISED,
-                     bd=1,
-                     bg='#AFB3B6',
-                     fg='white',
-                     justify=tk.CENTER,
-                     ).grid(row=0, column=0, columnspan= 3, sticky='we', padx=3, pady=4,)
-lab_flat1_adres = tk.Label(win, text='ул .Байсеитовой', font=('Arial', 16), relief=tk.RAISED, bd=0)\
-                    .grid(row=1, column=0, columnspan=3, sticky='we', padx=3, pady=3, ipadx=3, ipady=3)
+lab_data = tk.Label(win, text='Февраль 2023', font=('Arial', 16), bg='#AFB3B6', relief=tk.RAISED, bd=1)\
+                    .grid(row=1, column=2, sticky='we', padx=3, pady=3, ipadx=3, ipady=3)
+lab_flat1_adres = tk.Label(win, text='ул .Байсеитовой', font=('Arial', 16), bg='#AFB3B6', relief=tk.RAISED, bd=1)\
+                    .grid(row=1, column=0, sticky='we', padx=3, pady=3, ipadx=3, ipady=3)
+
 lab_flat1_com = tk.Label(win, text='Электроэнергия', font=('Arial', 13), relief=tk.RAISED, padx=20, pady=3, bd=0, anchor='e')\
                     .grid(row=2, column=0, sticky='we', padx=3, pady=1)
 lab_flat1_mus = tk.Label(win, text='Мусор', font=('Arial', 13), relief=tk.RAISED, padx=20, pady=3, bd=0, anchor='e')\
